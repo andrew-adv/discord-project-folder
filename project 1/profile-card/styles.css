@@ -6,6 +6,7 @@
 
 body {
     background-color: #000000;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 aside{
@@ -37,4 +38,35 @@ aside{
     width: 300px;
 
     border-radius: 10%;
+}
+
+.profile-contents {
+    position: relative;
+    place-content: center;
+}
+
+.profile-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.profile-btn  {
+    text-align: end;
+    font-size: larger;
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.profile-btn button {
+    border: none;
+    border-radius: 20%;
+
+    font-weight: 600;
+    padding:10px;
+    padding-inline: 20px;
+    cursor: pointer;
 }
