@@ -10,7 +10,7 @@ body {
 }
 
 aside{
-    height: 100vh;
+    height: 90vh;
     place-content: center;
 }
 
@@ -28,6 +28,8 @@ aside{
     
     margin: auto;
 
+    transition: 3s;
+
     display: flex;
     justify-content: space-between;
     gap: 20px;
@@ -43,6 +45,7 @@ aside{
 .profile-contents {
     position: relative;
     place-content: center;
+    max-width: 325px;
 }
 
 .profile-content {
@@ -58,7 +61,7 @@ aside{
 
     position: absolute;
     right: 0;
-    bottom: 0;
+    bottom: 15px;
 }
 
 .profile-btn button {
@@ -69,4 +72,16 @@ aside{
     padding:10px;
     padding-inline: 20px;
     cursor: pointer;
+
+    transition: background-color 1s ease, transform ease 1.2s ;
+}
+
+.profile-btn button:hover {
+    background-color: aqua;
+    transform: scale(1.2);
+}
+
+body:has(.profile-btn button:hover ) .profile-container {
+    transform: scale(0.97);
+    box-shadow: 0 0 100px rgba(255, 255, 255, 0.5);
 }
