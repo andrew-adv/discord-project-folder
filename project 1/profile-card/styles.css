@@ -73,7 +73,7 @@ aside{
     padding-inline: 20px;
     cursor: pointer;
 
-    transition: background-color 1s ease, transform ease 1.2s ;
+    transition: background-color 3s ease, transform ease 3.1s ;
 }
 
 .profile-btn button:hover {
