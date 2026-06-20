@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #676464;
+}
+
+nav {
+    border: 2px red solid;
+    padding: 10px;
+    
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul{
+    list-style: none;
+
+    display: flex;
+
+    margin-inline: 10px;
+}
+
+li {
+    font-weight: 600;
+    font-size: large;
+    word-spacing:10em;
+    padding: 10px;
+    margin-inline: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 2px wheat;
+}
+
+li:hover {
+    cursor: pointer;
+}
